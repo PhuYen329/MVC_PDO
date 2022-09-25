@@ -12,7 +12,8 @@ class controller{
         return false;
         
     }
-    public function render($views,$data=[]){
+    public function view($views,$data=[]){
+        extract($data);
         if(file_exists(_Dir_Root.'/app/views/'.$views.'.php')){
             require_once _Dir_Root.'/app/views/'.$views.'.php';
         }

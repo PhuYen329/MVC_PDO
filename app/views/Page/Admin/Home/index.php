@@ -1,6 +1,6 @@
 Layout Admin
 <?php 
     echo '<pre>';
-    print_r($data);
+    print_r($getProduct);
     echo'</pre>';
 ?>
