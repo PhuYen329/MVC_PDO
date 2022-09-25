@@ -14,6 +14,11 @@ class products extends controller{
         $gia=30;
         $data=$this->model_product->updateProduct($msp,$gia);
         echo "<pre>";print_r($data);echo"</pre>";
+       
+    }
+    public function detail(){
+        $data['data']=$this->model_product->getList();
+        $this->render('Page/Admin/Home/index',$data);
     }
 }
 ?>

@@ -7,14 +7,15 @@ class controller{
             if(class_exists($model)){
                 $model=new $model();
                 return $model;
-            }
-          
+            } 
         }
-       
         return false;
+        
     }
-    public function render($views){
-
+    public function render($views,$data=[]){
+        if(file_exists(_Dir_Root.'/app/views/'.$views.'.php')){
+            require_once _Dir_Root.'/app/views/'.$views.'.php';
+        }
     }
 }
 ?>
