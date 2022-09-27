@@ -31,13 +31,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <section id="container">
     <?php 
-    require_once _Dir_Root."/app/views/LayoutAdmin/blockAdmin/header.php";
-    require_once _Dir_Root."/app/views/LayoutAdmin/blockAdmin/sildebar.php";
+    require_once _Dir_Root."/app/views/LayoutAdmin/header.php";
+    require_once _Dir_Root."/app/views/LayoutAdmin/sildebar.php";
     ?>
     <!--main content start-->
     <section id="main-content">
 	    <section class="wrapper">
-            <?php $this->view($content)?>
+            <?php $this->view($content,$data)?>
         </section>
     </section>
     <!--main content end-->

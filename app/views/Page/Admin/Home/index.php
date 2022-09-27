@@ -1,1 +1,1 @@
-nội dung đây này
+nội dung đây này <?=$title?>

@@ -14,8 +14,8 @@ class controller{
     }
     public function view($views,$data=[]){
         extract($data);
-        if(file_exists(_Dir_Root.'/app/views/'.$views.'.php')){
-            require_once _Dir_Root.'/app/views/'.$views.'.php';
+        if(file_exists(_Dir_Root.'/app/views/Page/'.$views.'.php')){
+            require_once _Dir_Root.'/app/views/Page/'.$views.'.php';
         }
     }
 }
