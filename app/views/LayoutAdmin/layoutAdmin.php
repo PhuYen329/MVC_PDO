@@ -37,7 +37,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!--main content start-->
     <section id="main-content">
 	    <section class="wrapper">
-            nội dung
+            <?php $this->view($content)?>
         </section>
     </section>
     <!--main content end-->

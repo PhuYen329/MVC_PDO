@@ -26,6 +26,7 @@ class products extends controller{
         return $this->view('Page/Admin/Home/index',$this->data);
     }
     public function detail(){
+        $this->data['content']='Page/Admin/Home/index';
         $this->data['product_detail']=$this->model_product->getList();
         $this->view('LayoutAdmin/layoutAdmin',$this->data);
     }
